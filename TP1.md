@@ -6,13 +6,13 @@ L'application permet à un utilisateur de selectionner un fichier YAML et de l'u
 POC : https://gist.github.com/adamczi/23a3b6d4bb7b2be35e79b0667d6682e1
 
 ## Pré-requis :
-- Avoir Git [git version 2.33.0.windows.2]
-- Avoir un PC sous Windows [W7 / W10]
+- Avoir Git 
+- Avoir un PC sous Windows [W7 / W10 / W11]
 - Python [Python 3.9.7]
 - Avoir un compte github
 - De préférence, avoir un éditeur de code (ex: VS Code)
 
-## TP DevOps
+## TP1 - DevOps
 
 ### I - Git clone et exécution
 

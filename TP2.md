@@ -1,13 +1,10 @@
 # HMP - Formation DevSecOps
 
-L'objectif de ce repository est de pouvoir fournir une formation d'introduction au DevSecOps. Pour cela on exploite une vulnérabilité qui permet à un utilisateur d'exécuter du code en injectant un fichier YAML.
-L'application permet à un utilisateur de selectionner un fichier YAML et de l'upload. Il intègre, par défaut, la version 5.3 de la bibliothèque PyYAML qui est vulnérable. 
-
 POC : https://gist.github.com/adamczi/23a3b6d4bb7b2be35e79b0667d6682e1
 
 ## Pré-requis :
-- Avoir Git [git version 2.33.0.windows.2]
-- Avoir un PC sous Windows [W7 / W10]
+- Avoir Git
+- Avoir un PC sous Windows [W7 / W10 / W111]
 - Python [Python 3.9.7]
 - Avoir un compte github
 - De préférence, avoir un éditeur de code (ex: VS Code)
