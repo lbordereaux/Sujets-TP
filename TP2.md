@@ -19,7 +19,7 @@ POC : https://gist.github.com/adamczi/23a3b6d4bb7b2be35e79b0667d6682e1
 git clone [URL .git]
 ```
 
-3) Dans Settings => Code Security, autoriser les "Dependabot alerts". 
+3) Activer les alertes dependabot dans settings => Code security and analysis => Dependabot alerts. 
 
 ### II - Découverte et test de l'application
 
