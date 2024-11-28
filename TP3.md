@@ -9,11 +9,20 @@
 - De préférence, avoir un éditeur de code (ex: VS Code)
 
 
-1. Install [Docker](https://www.docker.com), [Git](https://git-scm.com/downloads), [VSCode](https://code.visualstudio.com/), 
+1. Installer [Docker](https://www.docker.com), [Git](https://git-scm.com/downloads), [VSCode](https://code.visualstudio.com/).
+
+> :package: Quelle est la différence entre Docker et une machine virtuelle ?
+
 2. Crée toi un github et génère un Personnal Acces Token (Clique sur ta photo de profile => Settings => Developer settings => Personal access tokens => tokens classic). Coche toute les cases pour donner l'ensemble des droits à ton token (en réalité, c'est fortement déconseillé de faire ça).
 Conserve bien ton token, il te servieras par la suite.
 3. Crée toi un compte [Dockerhub](https://hub.docker.com/) et génère un token avec les droits READ/WRITE & DELETE (clique sur ta photo de profil => account settings => Personal access tokens)
+
+> ✏️ Qu'est ce que Dockerhub ? De quoi faut-il se méfier ?
+
 4. Fork le github [JuiceShop](https://github.com/juice-shop/juice-shop) dans ton github à toi et appel le "juice-shop-copy"
+
+> ✏️ Quelle image docker est utilisée par juice-shop ? Est-elle sécurisée ?
+
 5. Va dans les settings => secrets and variables => actions et ajouter ces deux variables :
 
 DOCKERHUB_TOKEN = [Mettre ton secret dockerhub]
@@ -61,6 +70,11 @@ jobs:
        push: true
        tags: [USERNAME_DOCKERHUB]/juice-shop-hmp:latest
 ```
+
+> ✏️ Quelle image est utilisée pour l'éxécution de ce worflow ? Le système d'exploitation est-il le même que pour l'application juice-shop ?
+
+> ✏️ Quelles sont les trois étapes décrites dans ce workflow ?
+
 
 10. Pense à bien modifier la dernière ligne avec ton username dockerhub
 11. Dans l'invite de commande (CMD) va dans ton dossier juice-shop-copy et tape les commandes suivante :
