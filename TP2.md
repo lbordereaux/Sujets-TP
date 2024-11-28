@@ -33,10 +33,16 @@ python application.py
 
 6) Allez sur le navigateur et dans la barre de navigation tapez "127.0.0.1:5000". Vous devriez tomber sur un site web d'analyse de fichier de configuration 
 
-7) Dans l'onglet "Upload", sélectionnez et upload le fichier "payload.yaml". Regardez alors votre terminal. La commande "dir" s'est exécutée et vous pouvez voir la liste des fichiers et dossiers de votre répertoire. Cela veut donc dire que la vulnérabilité a bien été exploitée.
+> :mag: Inspectez le fichier payload.yml. Quelle ligne est intéressante dans ce fichier ? Que fait cette ligne ?
+
+7) Dans l'onglet "Upload", sélectionnez et upload le fichier "payload.yaml". 
+
+> :mag: Regardez alors votre terminal. Que constatez-vous ?
+
+La commande "dir" s'est exécutée et vous pouvez voir la liste des fichiers et dossiers de votre répertoire. Cela veut donc dire que la vulnérabilité a bien été exploitée.
 Avec CTRL+C il est possible d'arréter l'exécution de l'application dans votre terminal. 
 
-### III - Correction de la vuln
+### III - Correction de la vulnérabilité
 
 8) Créer une nouvelle branch 'dev' et aller dessus
 ```
