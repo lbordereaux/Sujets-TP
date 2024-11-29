@@ -74,7 +74,7 @@ Aller dans git => pull request => créer une pull request => merge pull request 
 
 12) Vérifier alors que les deux branch ont bien la même valeur pour PyYAML.
 
-> :pencil2: Quel sont les points sensibles qu'un attaquant pourrait utiliser ?
+> :pencil2:    Avec ce que l'on a vu, quel pourrait être les différents vecteur d'attaque que pourrait exploiter un un attaquant ? (3 réponses)
 
 # Cheatsheet :
 Se connecter à son repo:
