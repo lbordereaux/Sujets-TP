@@ -42,7 +42,22 @@ python application.py
 La commande "dir" s'est exécutée et vous pouvez voir la liste des fichiers et dossiers de votre répertoire. Cela veut donc dire que la vulnérabilité a bien été exploitée.
 Avec CTRL+C il est possible d'arréter l'exécution de l'application dans votre terminal. 
 
-### III - Correction de la vulnérabilité
+### III - Investigation
+
+> :mag: Imaginez une attaque exploitant cette vulnérabilité.
+
+> :mag: Quel pourrait être le niveau de criticité de cette vulnérabilité  ? (LOW/MEDIUM/HIGH/CRITICAL)
+
+> :mag: Quel est le composant vulnérable ?
+
+> :mag: Quel est le nom de la vulnérabilité ? (CVE-XXXX-XXXX)
+
+> :mag: Quel est le niveau réel de criticité de cette vulnérabilité ? D'après vous, pourquoi a-t-elle ce niveau ?
+
+> :mag: A partir de quelle version cette vulnérabilité est-elle corrigée ?
+
+
+### IV - Correction de la vulnérabilité
 
 8) Créer une nouvelle branch 'dev' et aller dessus
 ```
@@ -50,14 +65,15 @@ git branch dev
 git checkout dev
 ```
 
-9) La vulnérabilité que l'on vient d'exploiter a été corrigée dans la version PyYAML 5.3.1.
+9) La vulnérabilité que l'on vient d'exploiter a été corrigée dans la version que vous avez troué précédemment.
 Tapez les commandes suivantes pour mettre à jour la dépendance et mettre à jour le fichier requirements.txt. 
+
 ```
-pip install pyyaml==5.3.1
+pip install pyyaml==[version (ex: 1.2.3)]
 python update_requirements.py
 ```
 
-10) Vérifier que le fichier "requirements.txt" s'est bien mis à jour et que la version de PyYAML est bien la 5.3.1 "PyYAML==5.3.1". On va maintenant vérifier que la vulnérabilité est bien corrigée. Relancer l'application.
+10) Vérifier que le fichier "requirements.txt" s'est bien mis à jour et que la version de PyYAML est bien celle installée. On va maintenant vérifier que la vulnérabilité est bien corrigée. Relancer l'application.
 ```
 python application.py
 ```

@@ -74,6 +74,7 @@ Aller dans git => pull request => créer une pull request => merge pull request 
 
 12) Vérifier alors que les deux branch ont bien la même valeur pour PyYAML.
 
+> :pencil2: Quel sont les points sensibles qu'un attaquant pourrait utiliser ?
 
 # Cheatsheet :
 Se connecter à son repo:
