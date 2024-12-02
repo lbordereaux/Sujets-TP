@@ -43,8 +43,7 @@ git checkout dev
 ```
 
 
-8) La vulnérabilité que l'on vient d'exploiter a été corrigée dans la version PyYAML 5.3.1.
-Tapez les commandes suivantes pour mettre à jour la dépendance et mettre à jour le fichier requirements.txt. 
+8) Tapez les commandes suivantes pour mettre à jour la dépendance et mettre à jour le fichier requirements.txt. 
 ```
 pip install pyyaml==5.3.1
 python update_requirements.py
