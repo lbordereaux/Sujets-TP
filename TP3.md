@@ -61,8 +61,8 @@ jobs:
     - name: Login to dockerhub
       uses: docker/login-action@v3
       with:
-       username: ${{ secrets.DOCKERHUB_USERNAME }}
-       password: ${{ secrets.DOCKERHUB_TOKEN }}
+       username: ""
+       password: ""
 
     - name: Build and push to dockerhub
       uses: docker/build-push-action@v5
@@ -79,25 +79,21 @@ jobs:
 
 10. Pense à bien modifier la dernière ligne avec ton username dockerhub
 
-11. Dans l'invite de commande (CMD) va dans ton dossier juice-shop-copy et tape les commandes suivante :
+11. Compléter le fichier yaml en renseignant les secrets en se basant sur les variables d'environnement définies plus tôt.
+
+12. Commit tes changements et pousse les sur github.
+
+
+13. Sur Github, configure le scan SAST. Dans Actions => New Workflow => chercher "CodeQL" => Cliquer sur "Configure" => "Commit changes ...".  
+
+
+14. Quelle est la commande qui permet de récupérer le conteneur qui a ainsi été construit depuis Dockerhub ? Exécuter alors cette commande puis la commande suivante :
+
 ```
-git add .
-git commit -m "first commit"
-git push
-```
-
-
-12. Sur Github, configure le scan SAST. Dans Actions => New Workflow => chercher "CodeQL" => Cliquer sur "Configure" => "Commit changes ...".  
-
-
-13. Exécute ensuite les commandes suivantes :
-```
-docker start
-docker pull [USERNAME_DOCKERHUB]/juice-shop-hmp
 docker run --rm -p 127.0.0.1:3000:3000 [USERNAME_DOCKERHUB]/juice-shop-hmp
 ```
 
-14. Va dans ton navigateur et écris cette URL : "127.0.0.1:3000". Tu devrais arriver sur le site juice-shop 
+15. Va dans ton navigateur et écris cette URL : "127.0.0.1:3000". Tu devrais arriver sur le site juice-shop 
 
 Pour stopper le docker, ouvrir un autre invite de commande et tapper :
 ``` 
