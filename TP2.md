@@ -1,7 +1,5 @@
 # HMP - Formation DevSecOps
 
-POC : https://gist.github.com/adamczi/23a3b6d4bb7b2be35e79b0667d6682e1
-
 ## Pré-requis :
 - Avoir Git
 - Avoir un PC sous Windows [W7 / W10 / W111]
