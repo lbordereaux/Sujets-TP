@@ -38,8 +38,8 @@ python application.py
 
 7) Créer une nouvelle branch 'dev' et aller dessus
 ```
-git branch dev
-git checkout dev
+git branch dev-[pseudo git]
+git checkout dev-[pseudo git]
 ```
 
 
