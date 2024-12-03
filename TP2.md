@@ -1,10 +1,8 @@
 # HMP - Formation DevSecOps
 
-POC : https://gist.github.com/adamczi/23a3b6d4bb7b2be35e79b0667d6682e1
-
 ## Pré-requis :
 - Avoir Git
-- Avoir un PC sous Windows [W7 / W10 / W111]
+- Avoir un PC sous Windows [W7 / W10 / W11]
 - Python [Python 3.9.7]
 - Avoir un compte github
 - De préférence, avoir un éditeur de code (ex: VS Code)
@@ -56,13 +54,19 @@ Avec CTRL+C il est possible d'arréter l'exécution de l'application dans votre 
 
 > :mag: A partir de quelle version cette vulnérabilité est-elle corrigée ?
 
+> :mag: Qu'est-ce qu'une CWE ?
+
+> :mag: Quelle est la CWE liée à cette vulnérabilité ?
+
+> :mag: Quelle est la différence entre CWE et CVE ?
+
 
 ### IV - Correction de la vulnérabilité
 
-8) Créer une nouvelle branch 'dev' et aller dessus
+8) Créer une nouvelle branch dev avec votre pseudo github et aller dessus
 ```
-git branch dev
-git checkout dev
+git branch dev-[pseudo git]
+git checkout dev-[pseudo git]
 ```
 
 9) La vulnérabilité que l'on vient d'exploiter a été corrigée dans la version que vous avez troué précédemment.

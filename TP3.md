@@ -36,11 +36,13 @@ Cliquer sur le bouton vert et faire un copie sur le bouton à droite puis éxéc
 git clone [URL .git]
 ```
 
-7. Connecte toi à ton répertoire : "git remote set-url origin https://[USERNAME]:[TOKEN_GITHUB]@github.com/[USERNAME]/juice-shop-copy.git"
+7. Activer les alertes dependabot dans settings => Code security and analysis => Dependabot alerts.
 
-8. Ouvre VS Code, va dans Explorer, Workspace et ajoute le dossier juice-shop-copy.
+8. Connecte toi à ton répertoire : "git remote set-url origin https://[USERNAME]:[TOKEN_GITHUB]@github.com/[USERNAME]/juice-shop-copy.git"
 
-9. Crée le fichier "dockerhub.yml" dans le dossier .github/workflows et ajoute le code suivant:
+9. Ouvre VS Code, va dans Explorer, Workspace et ajoute le dossier juice-shop-copy.
+
+10. Crée le fichier "dockerhub.yml" dans le dossier .github/workflows et ajoute le code suivant:
 ```
 name: Build and push Docker image to dockerhub
 
@@ -77,9 +79,7 @@ jobs:
 > ✏️ Quelles sont les trois étapes décrites dans ce workflow ?
 
 
-10. Pense à bien modifier la dernière ligne avec ton username dockerhub
-
-11. Compléter le fichier yaml en renseignant les secrets en se basant sur les variables d'environnement définies plus tôt.
+11. Pense à bien modifier la dernière ligne avec ton username dockerhub. Compléte le fichier yaml en renseignant les secrets en se basant sur les variables d'environnement définies plus tôt.
 
 12. Commit tes changements et pousse les sur github.
 
