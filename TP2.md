@@ -56,6 +56,12 @@ Avec CTRL+C il est possible d'arréter l'exécution de l'application dans votre 
 
 > :mag: A partir de quelle version cette vulnérabilité est-elle corrigée ?
 
+> :mag: Qu'est-ce qu'une CWE ?
+
+> :mag: Quelle est la CWE liée à cette vulnérabilité ?
+
+> :mag: Quelle est la différence entre CWE et CVE ?
+
 
 ### IV - Correction de la vulnérabilité
 
