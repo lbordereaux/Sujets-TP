@@ -59,10 +59,10 @@ Avec CTRL+C il est possible d'arréter l'exécution de l'application dans votre 
 
 ### IV - Correction de la vulnérabilité
 
-8) Créer une nouvelle branch 'dev' et aller dessus
+8) Créer une nouvelle branch dev avec votre pseudo github et aller dessus
 ```
-git branch dev
-git checkout dev
+git branch dev-[pseudo git]
+git checkout dev-[pseudo git]
 ```
 
 9) La vulnérabilité que l'on vient d'exploiter a été corrigée dans la version que vous avez troué précédemment.
