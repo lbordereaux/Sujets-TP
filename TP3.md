@@ -36,11 +36,15 @@ Cliquer sur le bouton vert et faire un copie sur le bouton à droite puis éxéc
 git clone [URL .git]
 ```
 
-7. Connecte toi à ton répertoire : "git remote set-url origin https://[USERNAME]:[TOKEN_GITHUB]@github.com/[USERNAME]/juice-shop-copy.git"
+7. Activer les alertes dependabot dans settings => Code security and analysis => Dependabot alerts.
 
-8. Ouvre VS Code, va dans Explorer, Workspace et ajoute le dossier juice-shop-copy.
+8. Activer les alertes dependabot dans settings => Code security and analysis => Dependabot alerts.
 
-9. Crée le fichier "dockerhub.yml" dans le dossier .github/workflows et ajoute le code suivant:
+9. Connecte toi à ton répertoire : "git remote set-url origin https://[USERNAME]:[TOKEN_GITHUB]@github.com/[USERNAME]/juice-shop-copy.git"
+
+10. Ouvre VS Code, va dans Explorer, Workspace et ajoute le dossier juice-shop-copy.
+
+11. Crée le fichier "dockerhub.yml" dans le dossier .github/workflows et ajoute le code suivant:
 ```
 name: Build and push Docker image to dockerhub
 
@@ -77,9 +81,9 @@ jobs:
 > ✏️ Quelles sont les trois étapes décrites dans ce workflow ?
 
 
-10. Pense à bien modifier la dernière ligne avec ton username dockerhub
+12. Pense à bien modifier la dernière ligne avec ton username dockerhub
 
-11. Dans l'invite de commande (CMD) va dans ton dossier juice-shop-copy et tape les commandes suivante :
+13. Dans l'invite de commande (CMD) va dans ton dossier juice-shop-copy et tape les commandes suivante :
 ```
 git add .
 git commit -m "first commit"
@@ -87,17 +91,17 @@ git push
 ```
 
 
-12. Sur Github, configure le scan SAST. Dans Actions => New Workflow => chercher "CodeQL" => Cliquer sur "Configure" => "Commit changes ...".  
+14. Sur Github, configure le scan SAST. Dans Actions => New Workflow => chercher "CodeQL" => Cliquer sur "Configure" => "Commit changes ...".  
 
 
-13. Exécute ensuite les commandes suivantes :
+15. Exécute ensuite les commandes suivantes :
 ```
 docker start
 docker pull [USERNAME_DOCKERHUB]/juice-shop-hmp
 docker run --rm -p 127.0.0.1:3000:3000 [USERNAME_DOCKERHUB]/juice-shop-hmp
 ```
 
-14. Va dans ton navigateur et écris cette URL : "127.0.0.1:3000". Tu devrais arriver sur le site juice-shop 
+16. Va dans ton navigateur et écris cette URL : "127.0.0.1:3000". Tu devrais arriver sur le site juice-shop 
 
 Pour stopper le docker, ouvrir un autre invite de commande et tapper :
 ``` 
