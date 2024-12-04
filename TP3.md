@@ -81,10 +81,9 @@ jobs:
 
 12. Commit tes changements et pousse les sur github.
 
+13. Sur Github, configure CodeQL. Dans Actions => New Workflow => chercher "CodeQL" => Cliquer sur "Configure" => "Commit changes ...".  
 
-13. Sur Github, configure le scan SAST. Dans Actions => New Workflow => chercher "CodeQL" => Cliquer sur "Configure" => "Commit changes ...".  
-
-> ✏️ De quel type d'outil est CodeQL ? (SCA/SAST ou DAST) 
+> ✏️ De quel type d'outil est CodeQL ? (SCA/SAST ou DAST)
 
 14. Quelle est la commande qui permet de récupérer le conteneur qui a ainsi été construit depuis Dockerhub ? Exécuter alors cette commande puis la commande suivante :
 
