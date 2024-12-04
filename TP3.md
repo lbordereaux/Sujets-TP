@@ -28,15 +28,13 @@ Conserve bien ton token, il te servieras par la suite.
 DOCKERHUB_TOKEN = [Mettre ton secret dockerhub]
 DOCKERHUB_USERNAME = [Mettre ton username dockerhub]
 
-Cliquer sur le bouton vert et faire un copie sur le bouton à droite puis éxécuter sur ton PC la commande git clone ...
+6. Activer les alertes dependabot dans settings => Code security and analysis => Dependabot alerts.
 
-6. Toujours sur Github, cliquer sur code (bouton vert), dans HTTPS copier le l'URL (.git) et aller dans votre invite de commande et taper la commande :
+7. Toujours sur Github, cliquer sur code (bouton vert), dans HTTPS copier le l'URL (.git) et aller dans votre invite de commande et taper la commande :
 
 ```
 git clone [URL .git]
 ```
-
-7. Activer les alertes dependabot dans settings => Code security and analysis => Dependabot alerts.
 
 8. Connecte toi à ton répertoire : "git remote set-url origin https://[USERNAME]:[TOKEN_GITHUB]@github.com/[USERNAME]/juice-shop-copy.git"
 
@@ -86,6 +84,7 @@ jobs:
 
 13. Sur Github, configure le scan SAST. Dans Actions => New Workflow => chercher "CodeQL" => Cliquer sur "Configure" => "Commit changes ...".  
 
+> ✏️ De quel type d'outil est CodeQL ? (SCA/SAST ou DAST) 
 
 14. Quelle est la commande qui permet de récupérer le conteneur qui a ainsi été construit depuis Dockerhub ? Exécuter alors cette commande puis la commande suivante :
 
