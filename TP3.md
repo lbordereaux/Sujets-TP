@@ -69,7 +69,7 @@ jobs:
       with:
        context: 
        push: true
-       tags: [USERNAME_DOCKERHUB]/juice-shop-hmp:latest
+       tags: ""/juice-shop-hmp:latest
 ```
 
 > ✏️ Quelle image est utilisée pour l'éxécution de ce worflow ? Le système d'exploitation est-il le même que pour l'application juice-shop ?
@@ -77,7 +77,7 @@ jobs:
 > ✏️ Quelles sont les trois étapes décrites dans ce workflow ?
 
 
-11. Pense à bien modifier la dernière ligne avec ton username dockerhub. Compléte le fichier yaml en renseignant les secrets en se basant sur les variables d'environnement définies plus tôt.
+11. Compléte le fichier yaml en renseignant les secrets en se basant sur les variables d'environnement définies plus tôt. 
 
 12. Commit tes changements et pousse les sur github.
 
