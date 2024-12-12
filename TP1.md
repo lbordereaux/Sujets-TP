@@ -70,6 +70,12 @@ def view_file():
     except Exception as e:
         abort(500, description=str(e))
 ```
+
+et décommenter les lignes suivantes dans les fichiers files.html/index.html et upload.html
+```
+<!-- <li><a href="/files">Files</a></li> -->
+```
+
 > :pencil2: Pourquoi avoir créé une nouvelle branche pour faire cette modification ?
 > :pencil2: Expliquer le code ajouté ci-dessus, que fait-il ?
 
