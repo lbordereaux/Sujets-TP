@@ -43,10 +43,32 @@ git checkout dev-[pseudo git]
 ```
 
 
-8) Tapez les commandes suivantes pour mettre à jour la dépendance et mettre à jour le fichier requirements.txt. 
+8) Ajouter le code suivant dans le fichier application.py.
 ```
-pip install pyyaml==5.3.1
-python update_requirements.py
+@app.route('/files')
+def files():
+    path = f'{Path(__file__).parent}'
+    file_path = path + "\\files"
+    print(file_path)
+    fichier = []
+    for item in os.listdir(file_path):
+        fichier.append(item)
+    return render_template('files.html', files=fichier)
+
+
+@app.route('/view')
+def view_file():
+    filename = request.args.get('file')  # Paramètre `file` passé dans l'URL
+    base_path = os.path.abspath('./files')  # Répertoire sécurisé
+    requested_path = os.path.abspath(os.path.join(base_path, filename))
+
+
+    try:
+        with open(requested_path, 'r') as file:
+            content = file.read()  # Lire le contenu du fichier
+        return render_template('filecontent.html', filename=filename, content=content)
+    except Exception as e:
+        abort(500, description=str(e))
 ```
 > :pencil2: Pourquoi avoir créé une nouvelle branche pour faire cette modification ?
 
@@ -55,11 +77,11 @@ python update_requirements.py
 ```
 git add .
 git commit -m "first commit dev"
-git push --set-upstream origin dev
+git push
 ```
 > :pencil2: Que fait la commande `git add .` ? Que pourrait-il mal se passer ?
 
-10) Aller dans github et vérifiez que la version de PyYAML dans la branch dev est bien en 5.3.1 alors que dans la branch main elle n'est encore que en 5.3.
+10) Aller dans github et vérifiez que le fichier application.py a bien été modifié.
 
 11) Faire un merge de la branch dev vers la branch main. 
 Aller dans git => pull request => créer une pull request => merge pull request => confirm merge
