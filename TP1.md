@@ -88,7 +88,7 @@ Aller dans git => pull request => créer une pull request => merge pull request 
 
 > :pencil2:    Quelle est l'utilité de faire une pull request ?
 
-12) Vérifier alors que les deux branch ont bien la même valeur pour PyYAML.
+12) Faites un git pull et vérifier que la nouvelle fonctionnalité a bien été implémentée.
 
 > :pencil2:    Avec ce que l'on a vu, quel pourrait être les différents vecteur d'attaque que pourrait exploiter un un attaquant ? (3 réponses)
 
