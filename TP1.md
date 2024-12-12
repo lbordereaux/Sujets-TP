@@ -71,6 +71,7 @@ def view_file():
         abort(500, description=str(e))
 ```
 > :pencil2: Pourquoi avoir créé une nouvelle branche pour faire cette modification ?
+> :pencil2: Expliquer le code ajouté ci-dessus, que fait-il ?
 
 
 9) Envoyer le code vers la branch dev que vous venez de créer. Attention, il sera demandé d'ajouter votre Personnal Access Token.
