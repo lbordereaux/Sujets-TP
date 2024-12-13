@@ -102,7 +102,7 @@ Aller dans git => pull request => créer une pull request => merge pull request 
 # Cheatsheet :
 Se connecter à son repo:
 ```
-git remote set-url origin https://[USERNAME]:[TOKEN_GITHUB]@github.com/[USERNAME]/HMP-DSO/Formation-DSO.git"
+git remote set-url origin https://[USERNAME]:[TOKEN_GITHUB]@github.com/[USERNAME]/Formation-DSO.git"
 ```
 Supprimer tt les containers:
 ```
