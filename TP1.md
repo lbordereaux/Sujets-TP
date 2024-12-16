@@ -13,7 +13,7 @@
 
 ### I - Git clone et exécution
 
-1) Faire un fork de ce [projet](https://github.com/HMP-DSO/Formation-DSO) vers votre répository Head Mind.
+1) Faire un fork de ce [projet](https://github.com/HMP-DSO/Formation-DSO) vers votre répository HeadMind.
 
 > :pencil2: Qu'est ce qu'un fork ? A quoi servent-ils ?
 
