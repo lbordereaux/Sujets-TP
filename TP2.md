@@ -86,29 +86,28 @@ python application.py
 
 > :mag: Quelle notification concerne le code qui a été ajouté précédemment ?
 
-14) Essayez d'exploiter la vulnérabiltié. 
+> :mag: Quelle est la "Rule ID" de la notification ? Quelle vulnérabilité pourrait être possible au vu du nom de cette Rule ID ?
+
+> :mag: Quelle sont les CWE associées ?
+
+14) Essayez d'exploiter la vulnérabiltié.
 
 > :mag: En quoi cette faiblesse est une vulnérabilité ?
 
 ### VI - Correction de la vulnérabilité SAST
 
-Afin de corriger la vulnérabilité, il suffit d'ajouter les lignes suivantes.
-```
-#Vérification de sécurité pour empêcher la sortie du répertoire
-if not requested_path.startswith(base_path) or not os.path.isfile(requested_path):
-   abort(403)
-```
-> :mag: Expliquer les lignes ci-dessus.
+15) CodeQL vous propose une correction, générer et ajouter cette correction dans le code source.
+    
+> :mag: Que font ces lignes de codes ?
 
+16) Faire un git add / git commit / git push de l'application avec la nouvelle version vers la branch dev.
 
-13) Faire un git add / git commit / git push de l'application avec la nouvelle version vers la branch dev.
-
-14) Faire un merge de la branch dev vers la branch main.
+17) Faire un merge de la branch dev vers la branch main.
 ```
 git merge [branch]
 ```
 
-15) Vérifier que la vulnérabilité n'est plus présente.
+18) Vérifier que la vulnérabilité n'est plus présente.
 
 ____________________________________________________________________________________________________________
    ![HMP](https://github.com/user-attachments/assets/e7576c9a-c7bd-4150-aba2-9adee745a976)
