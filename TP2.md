@@ -66,7 +66,7 @@ git branch dev-[pseudo git]
 git checkout dev-[pseudo git]
 ```
 
-10) La vulnérabilité que l'on vient d'exploiter a été corrigée dans la version que vous avez troué précédemment.
+10) La vulnérabilité que l'on vient d'exploiter a été corrigée dans la version que vous avez trouvé précédemment.
 Tapez les commandes suivantes pour mettre à jour la dépendance et mettre à jour le fichier requirements.txt. 
 
 ```
