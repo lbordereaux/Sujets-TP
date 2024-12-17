@@ -79,7 +79,7 @@ python update_requirements.py
 python application.py
 ```
 
-12) Aller dans votre navigateur et dans la barre de navigation taper "127.0.0.1:5000". Essayer à nouveau d'envoyer le fichier YAML et regarder le terminal. Une erreur (500) devrait apparaître. Il n'est donc plus possible d'exploiter la vulnérabilité.
+12) Aller dans votre navigateur et dans la barre de navigation taper "127.0.0.1:5000". Essayer à nouveau d'envoyer le fichier YAML et regarder le terminal. Une erreur devrait apparaître. Il n'est donc plus possible d'exploiter la vulnérabilité.
 
 ### V - Investigation SAST
 
