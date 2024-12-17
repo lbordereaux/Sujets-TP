@@ -98,12 +98,14 @@ if not requested_path.startswith(base_path) or not os.path.isfile(requested_path
 > :mag: Expliquer les lignes ci-dessus.
 
 
-13) Faire un git add / git commit / git push de l'application avec la nouvelle version de PyYAML vers la branch dev.
+13) Faire un git add / git commit / git push de l'application avec la nouvelle version vers la branch dev.
 
-14) Faire un merge de la branch dev vers la branch main
+14) Faire un merge de la branch dev vers la branch main.
 ```
 git merge [branch]
 ```
+
+15) Vérifier que la vulnérabilité n'est plus présente.
 
 ____________________________________________________________________________________________________________
    ![HMP](https://github.com/user-attachments/assets/e7576c9a-c7bd-4150-aba2-9adee745a976)
