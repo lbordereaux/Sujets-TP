@@ -4,6 +4,7 @@
 - Avoir Git 
 - Avoir un PC sous Windows [W7 / W10 / W11]
 - Python [Python 3.9.7]
+- pip (penser à bien cocher la présence de pip durant l'installation de python)
 - Avoir un compte github
 - De préférence, avoir un éditeur de code (ex: VS Code)
 
