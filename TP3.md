@@ -3,7 +3,7 @@
 ## Pré-requis :
 - Avoir Git [git version 2.33.0.windows.2]
 - Avoir un PC sous Windows [W7 / W10]
-- Avoir docker
+- Docker (vérifier que vous avez accès à docker en ligne de commande ET à l'interface graphique)
 - Python [Python 3.9.7]
 - Avoir un compte github
 - De préférence, avoir un éditeur de code (ex: VS Code)
