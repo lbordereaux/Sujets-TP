@@ -82,8 +82,11 @@ python application.py
 12) Aller dans votre navigateur et dans la barre de navigation taper "127.0.0.1:5000". Essayer à nouveau d'envoyer le fichier YAML et regarder le terminal. Une erreur devrait apparaître. Il n'est donc plus possible d'exploiter la vulnérabilité.
 
 ### V - Investigation SAST
+13) Dans l'onglet "Security", regarder la partie "Code Scanning". Vous devriez avoir 5 notifications.
 
-> :mag: Comment exploiter cette faiblesse ?
+> :mag: Quelle notification concerne le code qui a été ajouté précédemment ?
+
+14) Essayez d'exploiter la vulnérabiltié. 
 
 > :mag: En quoi cette faiblesse est une vulnérabilité ?
 
