@@ -10,12 +10,9 @@
 ## TP2 - DevSecOps
 
 ### I - Préparation de l'environnement
-1) Faire un fork de ce [projet](https://github.com/HMP-DSO/Formation-DSO) vers votre répository Headmind.
+1) Pour ce TP on prendra comme base ce qui a été fait durant le TP1.
 
-2) Cliquer sur code (bouton vert), dans HTTPS copier l'URL (.git) et aller dans votre invite de commande et taper la commande :
-```
-git clone [URL .git]
-```
+2) Vérifier que vous avez bien accès à l'onglet "files" sur le site. Différents fichiers devraient s'afficher.
 
 3) Activer les alertes dependabot dans settings => Code security and analysis => Dependabot alerts.
 4) Activer CodeQL. Sur Github, aller dans Actions => New Workflow => chercher "CodeQL" => Cliquer sur "Configure" => "Commit changes ...".
