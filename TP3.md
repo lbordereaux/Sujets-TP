@@ -98,8 +98,5 @@ Pour stopper le docker, ouvrir un autre invite de commande et tapper :
 docker ps -a
 docker stop [ID Docker]
 ```
-
-![Juice Shop Logo](https://raw.githubusercontent.com/bkimminich/juice-shop/master/frontend/src/assets/public/images/JuiceShop_Logo_400px.png)
-
 ________________________________________________________________________
    ![HMP](https://github.com/user-attachments/assets/e7576c9a-c7bd-4150-aba2-9adee745a976)
