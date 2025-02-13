@@ -44,7 +44,7 @@ git checkout dev-[pseudo git]
 ```
 
 
-8) Ajouter le code suivant dans le fichier application.py.
+8) Ajouter le code suivant après la déclaration des routes (ligne 20) dans le fichier application.py, 
 ```
 @app.route('/files')
 def files():
