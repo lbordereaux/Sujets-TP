@@ -12,16 +12,20 @@
 1. Installer [Docker](https://www.docker.com), [Git](https://git-scm.com/downloads), [VSCode](https://code.visualstudio.com/).
 
 > :package: Quelle est la différence entre Docker et une machine virtuelle ?
+> Un container est un service distinct sur un même hote qui partage le même noyau
+> Une VM est une instance qui est isolée du noyau 
 
 2. Crée toi un github et génère un Personnal Acces Token (Clique sur ta photo de profile => Settings => Developer settings => Personal access tokens => tokens classic). Coche toute les cases pour donner l'ensemble des droits à ton token (en réalité, c'est fortement déconseillé de faire ça).
 Conserve bien ton token, il te servieras par la suite.
 3. Crée toi un compte [Dockerhub](https://hub.docker.com/) et génère un token avec les droits READ/WRITE & DELETE (clique sur ta photo de profil => account settings => Personal access tokens)
 
 > ✏️ Qu'est ce que Dockerhub ? De quoi faut-il se méfier ?
+> A la manière du github qui est une plateforme d'hébergement de code source, dockerhub est une plateforme d'hebergement d'images docker. Il faut se méfier des repos publiques qui contiennent des images de containers potentiellement malveillants 
 
 4. Fork le github [JuiceShop](https://github.com/juice-shop/juice-shop) dans ton github à toi et appel le "juice-shop-copy"
 
 > ✏️ Quelle image docker est utilisée par juice-shop ? Est-elle sécurisée ?
+> L'image est build depuis le dockerfile, aucune idée.
 
 5. Va dans les settings => secrets and variables => actions et ajouter ces deux variables :
 
@@ -73,6 +77,7 @@ jobs:
 ```
 
 > ✏️ Quelle image est utilisée pour l'éxécution de ce worflow ? Le système d'exploitation est-il le même que pour l'application juice-shop ?
+> ubuntu
 
 > ✏️ Quelles sont les trois étapes décrites dans ce workflow ?
 
