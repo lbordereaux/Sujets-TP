@@ -9,6 +9,9 @@
 - De préférence, avoir un éditeur de code (ex: VS Code)
 
 >:pencil2: Quelle est la différence entre Git et Gitlab ou Github ?
+>Git : Système de contrôle de version
+>Github : Service cloud d'hebergement de repo
+>Gitlab : Pareil
 
 ## TP1 - DevOps
 
@@ -17,6 +20,7 @@
 1) Faire un fork de ce [projet](https://github.com/HMP-DSO/Formation-DSO) vers votre répository HeadMind.
 
 > :pencil2: Qu'est ce qu'un fork ? A quoi servent-ils ?
+> Duplication du repo d'origine par / pour un utilisateur tiers. Ca sert à déconnecter la base de code est les précédents committers 
 
 2) Va dans ton github et génère un [Personnal Acces Token](https://github.com/settings/tokens). Coche toute les cases pour donner l'ensemble des droits à ton token (en réalité, c'est fortement déconseillé de faire ça). Conserve bien ton token, il te servieras par la suite.
 
@@ -34,6 +38,7 @@ python application.py
 ```
 
 > :pencil2: A quoi le fichier `requirements.txt` sert-il ? D'où proviennent les dépendances ?
+> Pour s'assurer que tout les dev utilisent le même environnement pour un projet. 
 
 ### II - Modification du code
 
@@ -78,7 +83,9 @@ et décommenter les lignes suivantes dans les fichiers files.html/index.html et 
 ```
 
 > :pencil2: Pourquoi avoir créé une nouvelle branche pour faire cette modification ?
+> Tester l'implémentation de nouvelles fonctionnalités sans impacter la branche initiale. 
 > :pencil2: Expliquer le code ajouté ci-dessus, que fait-il ?
+> Permet de faire apparaitre les boutons dans le front, et ainsi accéder à la route file. 
 
 
 9) Envoyer le code vers la branch dev que vous venez de créer. Attention, il sera demandé d'ajouter votre Personnal Access Token.
@@ -88,6 +95,7 @@ git commit -m "first commit dev"
 git push
 ```
 > :pencil2: Que fait la commande `git add .` ? Que pourrait-il mal se passer ?
+> Ajoute le contenu du repo local dans la zone d'index pour le prochain commmit. Le "." ajoute tout les fichiers, ce qui peut être dangereux, il faut mieux ajouter uniquement les fichiers que l'on souhaite modifier. 
 
 10) Aller dans github et vérifiez que le fichier application.py a bien été modifié.
 
@@ -95,10 +103,13 @@ git push
 Aller dans git => pull request => créer une pull request => merge pull request => confirm merge
 
 > :pencil2:    Quelle est l'utilité de faire une pull request ?
+> C'est un moyen de demander une révision du code par d'autres collaborateur, qui pourront ensuite le merge au dépot si ce dernier est approuvé. 
 
 12) Faites un git pull et vérifier que la nouvelle fonctionnalité a bien été implémentée.
 
 > :pencil2:    Avec ce que l'on a vu, quel pourrait être les différents vecteur d'attaque que pourrait exploiter un un attaquant ? (3 réponses)
+> Si un attaquant a accès à un compte qui gère le répo, il peut approuver du code malveillant et directement l'implémenter en bout de chaine : CICD-SEC-1: Insufficient Flow Control Mechanisms
+> Si un attaquant trouve une faille dans l'une des dépendances présentes dans le requirement.txt, il pourra potentiellement l'exploit : CICD-SEC-3: Dependency Chain Abuse
 
 # Cheatsheet :
 Se connecter à son repo:
@@ -117,8 +128,3 @@ Changer de branch:
 ```
 git checkout [branch]
 ```
-   
-____________________________________________________________________________________________________________
-   ![HMP](https://github.com/user-attachments/assets/e7576c9a-c7bd-4150-aba2-9adee745a976)
-
-
