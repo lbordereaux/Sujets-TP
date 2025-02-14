@@ -80,6 +80,7 @@ jobs:
 > ubuntu
 
 > ✏️ Quelles sont les trois étapes décrites dans ce workflow ?
+> Vérifie si le répo existe, se login sur dockerhub, build et push l'image sur dockerhub
 
 
 11. Compléte le fichier yaml en renseignant les secrets en se basant sur les variables d'environnement définies plus tôt. 
@@ -88,9 +89,11 @@ jobs:
 
 13. Sur Github, configure CodeQL. Dans Actions => New Workflow => chercher "CodeQL" => Cliquer sur "Configure" => "Commit changes ...".  
 
-> ✏️ De quel type d'outil est CodeQL ? (SCA/SAST ou DAST)
+> ✏️ De quel type d'outil est CodeQL ? (SCA/SAST ou DAST) SAST
 
-14. Quelle est la commande qui permet de récupérer le conteneur qui a ainsi été construit depuis Dockerhub ? Exécuter alors cette commande puis la commande suivante :
+14. Quelle est la commande qui permet de récupérer le conteneur qui a ainsi été construit depuis Dockerhub ? Exécuter alors cette commande puis la commande suivante
+
+> docker image pull lbordereaux/juice-shop-hmp
 
 ```
 docker run --rm -p 127.0.0.1:3000:3000 [USERNAME_DOCKERHUB]/juice-shop-hmp
