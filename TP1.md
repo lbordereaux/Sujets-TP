@@ -11,7 +11,7 @@
 >:pencil2: Quelle est la différence entre Git et Gitlab ou Github ?
 >Git : Système de contrôle de version
 >Github : Service cloud d'hebergement de repo
->Gitlab : Pareil
+>Gitlab : Plateforme DevOps complète
 
 ## TP1 - DevOps
 
