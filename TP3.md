@@ -98,5 +98,15 @@ Pour stopper le docker, ouvrir un autre invite de commande et tapper :
 docker ps -a
 docker stop [ID Docker]
 ```
+
+# Cheatsheet :
+Utilisation d'un secret dans un flux de travail:
+```
+https://docs.github.com/fr/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#using-secrets-in-a-workflow
+```
+Création d'un repo dockerHub :
+```
+https://docs.docker.com/docker-hub/repos/create/
+```
 ________________________________________________________________________
    ![HMP](https://github.com/user-attachments/assets/e7576c9a-c7bd-4150-aba2-9adee745a976)
